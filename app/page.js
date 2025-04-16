@@ -1,95 +1,56 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// app/page.js
 
-export default function Home() {
+import Image from 'next/image';
+import Link from 'next/link';
+
+export default function HomePage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <section>
+      <h2>Bienvenue à la Tour Eiffel</h2>
+      <Image
+        src="/images/tour-eiffel.jpg" // assure-toi d’avoir cette image dans /public/images
+        alt="La Tour Eiffel"
+        width={800}
+        height={500}
+        priority
+      />
+      <p>
+        Symbole emblématique de Paris, la Tour Eiffel attire des millions de visiteurs chaque année. 
+        Construite pour l’exposition universelle de 1889, elle représente l’innovation, l’élégance et l’histoire.
+      </p>
+      <p>
+        Découvrez son histoire, sa construction, et explorez une galerie unique à travers notre site.
+      </p>
+      <h2>Bienvenue  a la taj  mahal</h2>
+         <Image
+         src="/images/taj-mahal.jpg" // assure-toi d’avoir cette image dans /public/images
+        alt="taj- mahal"
+        width={800}
+        height={500}
+        priority
+      />
+      <p>Sa construction commence en 1632, mais la date exacte de la fin des travaux demeure incertaine. Selon le chroniqueur officiel de Shâh Jahân, Abdul Hamid Lahori (en), le Taj Mahal est achevé à la fin de 1643 ou au début de 1644[10]. Mais une inscription dans l'entrée principale indique que la construction s'est achevée en 1648. L'État de l'Uttar Pradesh, qui a célébré officiellement le 350e anniversaire de l'édifice en 2004, affirme quant à lui que les travaux se sont achevés en 1654. Le chercheur Andrew Petersen, lui, mentionne prudemment que « les travaux ont duré plus de vingt ans »[11].</p>
+      <p>En 2019, le monument a attiré plus de 6 millions et demi de touristes, dont plus de 800 000 étrangers</p>
+      <h2>statue liberte</h2>
+      <Image
+         src="/images/statue-liberte.jpg"
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        alt="statue- liberte"
+        width={800}
+        height={500}
+        priority
+      />
+      <p>La statue de la Liberté ou La Liberté éclairant le monde[1],[2] (en anglais : Liberty Enlightening the World)[3], ou simplement Liberté est l'un des monuments les plus célèbres des États-Unis. Cette statue monumentale est située à New York, sur Liberty Island, au sud de Manhattan, à l'embouchure du fleuve Hudson et à proximité d’Ellis Island.</p>
+      <p>Construite et assemblée en France, sur une idée en 1865 du juriste Édouard Lefebvre de Laboulaye, au moment d'une collecte du quotidien Le Phare de la Loire pour honorer la veuve d'Abraham Lincoln[4], la statue fut offerte par le peuple français aux Américains, en signe d'amitié, et dévoilée au grand jour le 28 octobre 1886 en présence du président des États-Unis, Grover Cleveland, pour le centenaire de la Déclaration d'indépendance américaine.</p>
+      <nav>
+        <ul>
+          <li><Link href="/histoire"> Histoire</Link></li>
+          <li><Link href="/galerie"> Galerie</Link></li>
+          <li><Link href="/infos"> Infos pratiques</Link></li>
+        </ul>
+      </nav>
+    </section>
   );
 }
+
+            

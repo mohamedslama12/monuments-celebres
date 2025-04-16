@@ -1,42 +1,30 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* General styles for the navigation */
+nav {
+  background-color: #333; /* Dark background */
+  padding: 10px 0; /* Vertical padding for the nav */
+  text-align: center; /* Center the nav items */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+ul {
+  list-style-type: none; /* Remove default list bullet points */
   margin: 0;
+  padding: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+ul li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Space between items */
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* White text color */
+  font-size: 16px; /* Font size for the links */
+  padding: 10px 20px; /* Padding around the links */
+  border-radius: 5px; /* Rounded corners for the links */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+ul li a:hover {
+  background-color: #555; /* Change background on hover */
 }
