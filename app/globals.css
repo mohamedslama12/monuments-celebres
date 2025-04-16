@@ -6,7 +6,8 @@ nav {
 }
 
 ul {
-  list-style-type: none; /* Remove default list bullet points */
+  
+    list-style-type: none; /* Remove default list bullet points */
   margin: 0;
   padding: 0;
 }
@@ -28,3 +29,4 @@ ul li a {
 ul li a:hover {
   background-color: #555; /* Change background on hover */
 }
+
