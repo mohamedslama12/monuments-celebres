@@ -20,5 +20,6 @@ export const monuments = [
       description: 'Symbole de liberté, elle est située à New York.',
       image: '/images/statue-liberte.jpg',
     },
+  
   ];
   
