@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         </header>
         <main>{children}</main>
         <footer>
-          <p>&copy; 2025 Monument Célèbre. Tous droits réservés.</p>
+          <center><p>&copy; 2025 Monument Célèbre. Tous droits réservés.</p></center>
         </footer>
       </body>
     </html>
