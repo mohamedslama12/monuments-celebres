@@ -1,8 +1,10 @@
 /* General styles for the navigation */
+
 nav {
   background-color: #333; /* Dark background */
   padding: 10px 0; /* Vertical padding for the nav */
   text-align: center; /* Center the nav items */
+  color: white;
 }
 
 ul {
