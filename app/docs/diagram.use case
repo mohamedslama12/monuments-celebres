@@ -1,0 +1,35 @@
+@startuml
+title Diagramme de cas d'utilisation - Application Monuments Célèbres
+
+actor Utilisateur
+actor Administrateur
+
+rectangle "Application Monuments Célèbres" {
+  
+  (Consulter la liste des monuments) as ConsulterListe
+  (Voir les détails d'un monument) as VoirDetails
+  (Rechercher un monument) as Rechercher
+  (Ajouter aux favoris) as AjouterFavoris
+  (Voir les monuments favoris) as VoirFavoris
+  (Accéder à la carte interactive) as Carte
+  (Faire une visite virtuelle) as VisiteVirtuelle
+  
+  (Ajouter un monument) as AjouterMonument
+  (Modifier un monument) as ModifierMonument
+  (Supprimer un monument) as SupprimerMonument
+
+  Utilisateur --> ConsulterListe
+  Utilisateur --> VoirDetails
+  Utilisateur --> Rechercher
+  Utilisateur --> AjouterFavoris
+  Utilisateur --> VoirFavoris
+  Utilisateur --> Carte
+  Utilisateur --> VisiteVirtuelle
+
+  Administrateur --> AjouterMonument
+  Administrateur --> ModifierMonument
+  Administrateur --> SupprimerMonument
+  Administrateur --> VoirDetails
+}
+
+@enduml
